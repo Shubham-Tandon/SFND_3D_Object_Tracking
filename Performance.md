@@ -12,7 +12,7 @@ The TTC calculated using Lidar point clouds is reasonable accurate as seen from 
 
 <img src="misc/LiDAR_TTC_Graph.png" width="808" height="500" />
 
-<img src="images/course_code_structure.png" width="779" height="414" />
+<img src="misc/Det_Desc_Evaluation.png.png" width="414" height="800" />
 
 ## FP.6 Performance Evaluation 2
 
