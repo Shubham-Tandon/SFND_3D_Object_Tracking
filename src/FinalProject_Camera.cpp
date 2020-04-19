@@ -29,22 +29,22 @@ int main(int argc, const char *argv[])
     std::ofstream myfile;
     myfile.open ("Results.csv");
 
-    vector<string> detectList = {"SHITOMASI", "HARRIS", "FAST", "BRISK", "ORB", 
-                                                                "AKAZE", "SIFT"};
-    vector<string> descList   = {"BRISK", "BRIEF", "ORB", "FREAK",  "SIFT"};
+    // vector<string> detectList = {"SHITOMASI", "HARRIS", "FAST", "BRISK", "ORB", 
+    //                                                             "AKAZE", "SIFT"};
+    // vector<string> descList   = {"BRISK", "BRIEF", "ORB", "FREAK",  "SIFT"};
 
-    for (string detectorType : detectList)
-    {
+    // for (string detectorType : detectList)
+    // {
 
-    for (string descriptorType : descList)
-    {
+    // for (string descriptorType : descList)
+    // {
 
-    if (detectorType.compare("SIFT") == 0 && descriptorType.compare("ORB") == 0)
-        continue;
+    // if (detectorType.compare("SIFT") == 0 && descriptorType.compare("ORB") == 0)
+    //     continue;
 
     vector<double> lidarTTClist, cameraTTClist;
-    // string detectorType = "FAST";
-    // string descriptorType = "BRIEF"; // BRISK, BRIEF, ORB, FREAK, AKAZE, SIFT
+    string detectorType = "FAST";
+    string descriptorType = "BRIEF"; // BRISK, BRIEF, ORB, FREAK, AKAZE, SIFT
 
     myfile << detectorType << " + "<< descriptorType << "\n";
     myfile << " , Image 1, Image 2, Image 3, Image 4, Image 5, Image 6, Image 7, Image 8, Image 9.\n";
@@ -160,7 +160,7 @@ int main(int argc, const char *argv[])
         bVis = true;
         if(bVis)
         {
-            show3DObjects((dataBuffer.end()-1)->boundingBoxes, cv::Size(4.0, 20.0), cv::Size(2000, 2000), false);
+            show3DObjects((dataBuffer.end()-1)->boundingBoxes, cv::Size(4.0, 20.0), cv::Size(2000, 2000), true);
         }
         bVis = false;
 
@@ -375,24 +375,24 @@ int main(int argc, const char *argv[])
 
     } // eof loop over all images
 
-    myfile << "LiDAR TTC, ";
-    for (double i : lidarTTClist)
-    {
-        myfile << std::to_string(i) << ",";
-    }
-    myfile << "\n";
-    myfile << "Camera TTC, ";
-    for (double i : cameraTTClist)
-    {
-        myfile << std::to_string(i) << ",";
-    }
+    // myfile << "LiDAR TTC, ";
+    // for (double i : lidarTTClist)
+    // {
+    //     myfile << std::to_string(i) << ",";
+    // }
+    // myfile << "\n";
+    // myfile << "Camera TTC, ";
+    // for (double i : cameraTTClist)
+    // {
+    //     myfile << std::to_string(i) << ",";
+    // }
 
-    myfile << "\n";
-    myfile << "\n";
-    myfile << "\n";
+    // myfile << "\n";
+    // myfile << "\n";
+    // myfile << "\n";
 
-    }
-    }
+    // }
+    // }
 
     return 0;
 }
