@@ -16,6 +16,3 @@ There can be several reason for inaccuracies in TTC value (when compared to TTCs
 <img src="images/Det_Desc_Evaluation.png" width="414" height="800" />
 
 <img src="images/Camera_TTC_Comp.png" width="808" height="500" />
-
-
-<img src="images/course_code_structure.png" width="779" height="414" />
