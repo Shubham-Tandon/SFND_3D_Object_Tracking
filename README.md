@@ -33,3 +33,5 @@ In this final project, you will implement the missing parts in the schematic. To
 2. Make a build directory in the top level project directory: `mkdir build && cd build`
 3. Compile: `cmake .. && make`
 4. Run it: `./3D_object_tracking`.
+
+<img src="images/Camera_TTC_Comp" width="808" height="500" />
